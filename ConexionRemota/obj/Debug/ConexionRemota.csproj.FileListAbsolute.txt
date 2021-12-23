@@ -1,0 +1,10 @@
+C:\MOOC\practicasharp\ConexionRemota\bin\Debug\ConexionRemota.exe.config
+C:\MOOC\practicasharp\ConexionRemota\bin\Debug\ConexionRemota.exe
+C:\MOOC\practicasharp\ConexionRemota\bin\Debug\ConexionRemota.pdb
+C:\MOOC\practicasharp\ConexionRemota\obj\Debug\ConexionRemota.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\ConexionRemota\obj\Debug\ConexionRemota.Form1.resources
+C:\MOOC\practicasharp\ConexionRemota\obj\Debug\ConexionRemota.Properties.Resources.resources
+C:\MOOC\practicasharp\ConexionRemota\obj\Debug\ConexionRemota.csproj.GenerateResource.cache
+C:\MOOC\practicasharp\ConexionRemota\obj\Debug\ConexionRemota.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\ConexionRemota\obj\Debug\ConexionRemota.exe
+C:\MOOC\practicasharp\ConexionRemota\obj\Debug\ConexionRemota.pdb
