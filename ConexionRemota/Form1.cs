@@ -29,7 +29,7 @@ namespace ConexionRemota
             reader.Close();
 
             richTextBox.Text = rpta;
-            MessageBox.Show("hola");
+            MessageBox.Show("hola como te va");
 
         }
 
