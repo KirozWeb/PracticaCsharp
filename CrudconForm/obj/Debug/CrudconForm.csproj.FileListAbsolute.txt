@@ -1,0 +1,17 @@
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\PruebaDB.mdf
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\PruebaDB_log.ldf
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\CrudconForm.exe.config
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\CrudconForm.exe
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\CrudconForm.pdb
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\EntityFramework.dll
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\EntityFramework.xml
+C:\MOOC\practicasharp\CrudconForm\bin\Debug\EntityFramework.SqlServer.xml
+C:\MOOC\practicasharp\CrudconForm\obj\Debug\CrudconForm.Form1.resources
+C:\MOOC\practicasharp\CrudconForm\obj\Debug\CrudconForm.Properties.Resources.resources
+C:\MOOC\practicasharp\CrudconForm\obj\Debug\CrudconForm.csproj.GenerateResource.cache
+C:\MOOC\practicasharp\CrudconForm\obj\Debug\CrudconForm.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\CrudconForm\obj\Debug\CrudconForm.csproj.CopyComplete
+C:\MOOC\practicasharp\CrudconForm\obj\Debug\CrudconForm.exe
+C:\MOOC\practicasharp\CrudconForm\obj\Debug\CrudconForm.pdb
+C:\MOOC\practicasharp\CrudconForm\obj\Debug\CrudconForm.csproj.AssemblyReference.cache
