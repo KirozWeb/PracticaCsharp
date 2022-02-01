@@ -1,0 +1,7 @@
+C:\MOOC\practicasharp\OrdenarMayor\bin\Debug\OrdenarMayor.exe.config
+C:\MOOC\practicasharp\OrdenarMayor\bin\Debug\OrdenarMayor.exe
+C:\MOOC\practicasharp\OrdenarMayor\bin\Debug\OrdenarMayor.pdb
+C:\MOOC\practicasharp\OrdenarMayor\obj\Debug\OrdenarMayor.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\OrdenarMayor\obj\Debug\OrdenarMayor.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\OrdenarMayor\obj\Debug\OrdenarMayor.exe
+C:\MOOC\practicasharp\OrdenarMayor\obj\Debug\OrdenarMayor.pdb
