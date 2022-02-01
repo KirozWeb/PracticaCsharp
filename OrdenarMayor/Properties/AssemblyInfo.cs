@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada a un ensamblado.
 [assembly: AssemblyTitle("OrdenarMayor")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Este codigo ordena e imprime el numero mayor ingresado")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP Inc.")]
 [assembly: AssemblyProduct("OrdenarMayor")]
