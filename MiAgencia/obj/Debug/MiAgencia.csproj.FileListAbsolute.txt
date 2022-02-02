@@ -1,0 +1,7 @@
+C:\MOOC\practicasharp\MiAgencia\bin\Debug\MiAgencia.exe.config
+C:\MOOC\practicasharp\MiAgencia\bin\Debug\MiAgencia.exe
+C:\MOOC\practicasharp\MiAgencia\bin\Debug\MiAgencia.pdb
+C:\MOOC\practicasharp\MiAgencia\obj\Debug\MiAgencia.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\MiAgencia\obj\Debug\MiAgencia.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\MiAgencia\obj\Debug\MiAgencia.exe
+C:\MOOC\practicasharp\MiAgencia\obj\Debug\MiAgencia.pdb
