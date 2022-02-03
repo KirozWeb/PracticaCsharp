@@ -1,0 +1,10 @@
+C:\MOOC\practicasharp\MostrarDatosListBox\bin\Debug\MostrarDatosListBox.exe.config
+C:\MOOC\practicasharp\MostrarDatosListBox\bin\Debug\MostrarDatosListBox.exe
+C:\MOOC\practicasharp\MostrarDatosListBox\bin\Debug\MostrarDatosListBox.pdb
+C:\MOOC\practicasharp\MostrarDatosListBox\obj\Debug\MostrarDatosListBox.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\MostrarDatosListBox\obj\Debug\MostrarDatosListBox.Form1.resources
+C:\MOOC\practicasharp\MostrarDatosListBox\obj\Debug\MostrarDatosListBox.Properties.Resources.resources
+C:\MOOC\practicasharp\MostrarDatosListBox\obj\Debug\MostrarDatosListBox.csproj.GenerateResource.cache
+C:\MOOC\practicasharp\MostrarDatosListBox\obj\Debug\MostrarDatosListBox.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\MostrarDatosListBox\obj\Debug\MostrarDatosListBox.exe
+C:\MOOC\practicasharp\MostrarDatosListBox\obj\Debug\MostrarDatosListBox.pdb

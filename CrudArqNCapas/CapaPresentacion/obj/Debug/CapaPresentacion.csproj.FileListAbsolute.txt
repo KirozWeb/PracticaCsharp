@@ -1,0 +1,15 @@
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\obj\Debug\CapaPresentacion.Form1.resources
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\MOOC\practicasharp\CrudArqNCapas\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

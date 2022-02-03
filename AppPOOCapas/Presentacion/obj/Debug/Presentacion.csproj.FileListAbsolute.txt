@@ -1,0 +1,4 @@
+C:\MOOC\practicasharp\AppPOOCapas\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\AppPOOCapas\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\MOOC\practicasharp\AppPOOCapas\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\MOOC\practicasharp\AppPOOCapas\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache

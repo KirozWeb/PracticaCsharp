@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ColegioDB" Class="ColegioContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-PVRFI0CR\SQLEXPRESS;Initial Catalog=ColegioDB;Integrated Security=True" SettingsObjectName="Linqcorregido.Properties.Settings" SettingsPropertyName="ColegioDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tb_alumno" Member="tb_alumno">
+    <Type Name="tb_alumno">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombres" Type="System.String" DbType="NChar(250)" CanBeNull="true" />
+      <Column Name="apellidos" Type="System.String" DbType="NChar(250)" CanBeNull="true" />
+      <Column Name="calificacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_grado" Member="tb_grado">
+    <Type Name="tb_grado">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="NChar(250)" CanBeNull="true" />
+      <Column Name="seccion" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="capacidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

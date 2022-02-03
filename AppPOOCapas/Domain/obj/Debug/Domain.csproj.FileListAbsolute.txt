@@ -1,0 +1,6 @@
+C:\MOOC\practicasharp\AppPOOCapas\Domain\bin\Debug\Domain.dll
+C:\MOOC\practicasharp\AppPOOCapas\Domain\bin\Debug\Domain.pdb
+C:\MOOC\practicasharp\AppPOOCapas\Domain\obj\Debug\Domain.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\AppPOOCapas\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\AppPOOCapas\Domain\obj\Debug\Domain.dll
+C:\MOOC\practicasharp\AppPOOCapas\Domain\obj\Debug\Domain.pdb

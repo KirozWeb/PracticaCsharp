@@ -1,0 +1,6 @@
+C:\MOOC\practicasharp\Linqcorregido\bin\Debug\Linqcorregido.exe.config
+C:\MOOC\practicasharp\Linqcorregido\bin\Debug\Linqcorregido.exe
+C:\MOOC\practicasharp\Linqcorregido\bin\Debug\Linqcorregido.pdb
+C:\MOOC\practicasharp\Linqcorregido\obj\Debug\Linqcorregido.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\Linqcorregido\obj\Debug\Linqcorregido.exe
+C:\MOOC\practicasharp\Linqcorregido\obj\Debug\Linqcorregido.pdb

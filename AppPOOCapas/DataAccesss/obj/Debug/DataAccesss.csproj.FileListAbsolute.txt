@@ -1,0 +1,2 @@
+C:\MOOC\practicasharp\AppPOOCapas\DataAccesss\obj\Debug\DataAccesss.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\AppPOOCapas\DataAccesss\obj\Debug\DataAccesss.csproj.CoreCompileInputs.cache

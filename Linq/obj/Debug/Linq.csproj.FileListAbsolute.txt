@@ -1,0 +1,6 @@
+C:\MOOC\practicasharp\Linq\bin\Debug\Linq.exe.config
+C:\MOOC\practicasharp\Linq\bin\Debug\Linq.exe
+C:\MOOC\practicasharp\Linq\bin\Debug\Linq.pdb
+C:\MOOC\practicasharp\Linq\obj\Debug\Linq.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\Linq\obj\Debug\Linq.exe
+C:\MOOC\practicasharp\Linq\obj\Debug\Linq.pdb

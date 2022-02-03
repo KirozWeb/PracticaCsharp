@@ -1,0 +1,9 @@
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\MOOC\practicasharp\CrudArqNCapas\CapaNegocio\obj\Debug\CapaNegocio.pdb
