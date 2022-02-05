@@ -1,0 +1,5 @@
+C:\MOOC\practicasharp\FormConCapas\CapaDatos\bin\Debug\CapaDatos.dll
+C:\MOOC\practicasharp\FormConCapas\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\MOOC\practicasharp\FormConCapas\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\MOOC\practicasharp\FormConCapas\CapaDatos\obj\Debug\CapaDatos.dll
+C:\MOOC\practicasharp\FormConCapas\CapaDatos\obj\Debug\CapaDatos.pdb
