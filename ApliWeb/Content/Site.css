@@ -25,7 +25,7 @@ textarea {
 
 /* BARRA DE NAVEGACION*/
 .main-nav{
-    background-color: #73ABB4;
+    background-color: #73AB84;
 }
 .main-nav a{
     color: #FFF !important;
@@ -35,14 +35,24 @@ textarea {
 }
 /*BOTON PRINCIPAL*/
 .btn-primary{
-    border-color: #384c39;
-    Background-color: #384c39;
+    border-color: #384C39;
+    Background-color: #99D19C;
 }
     .btn-primary:hover {
-        background-color: #384c39;
+        background-color: #384C39;
     }
 
 /* H2 */
 h2{
     color: #8F8073;
+}
+
+/*Formulario*/
+section.content{
+    margin-top: 20px;
+}
+
+form label{
+    line-height: 1;
+    font-size: 18px;
 }

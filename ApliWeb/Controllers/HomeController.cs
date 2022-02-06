@@ -16,6 +16,7 @@ namespace ApliWeb.Controllers
 
         public ActionResult About()
         {
+            //ViewBag.Message = "Your contact page.";
             ViewBag.Message = "Registra una mascota para darla en adopcion";
 
             return View();
@@ -24,7 +25,6 @@ namespace ApliWeb.Controllers
         public ActionResult Contact()
         {
             //ViewBag.Message = "Your contact page.";
-
             ViewBag.Message = "Registra una mascota para darla en adopcion";
 
             return View();
@@ -33,19 +33,40 @@ namespace ApliWeb.Controllers
         public ActionResult Contact(Mascota mascota)
         {
             //ViewBag.Message = "Your contact page.";
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    DAL.Mascota sdb = new DAL.Mascota();
+                    if (sdb.AgregarMascota(mascota))
+                    {
+                        ViewBag.Message = "Gracias por registrar a : " + mascota.Nombre;
+                        ModelState.Clear();
+                    }
+                }
+                return View();
+            }
+            catch(Exception ex)
+            {
+                ViewBag.Message = "Error al registrar mascota " +ex+ ModelState.IsValid;
 
-            ViewBag.Message = "Gracias por registrar a: " + mascota.Nombre;
+                return View();
+            }
 
-            return View();
+            
         }
 
-        public ActionResult Adoptar()
+        public ActionResult Adoptar(
+            )
         {
             //ViewBag.Message = "Your contact page.";
 
             ViewBag.Message = "Encuentra tu mascota ideal";
 
-            return View();
+            DAL.Mascota sdb = new DAL.Mascota();
+            List<Mascota> mascotas = sdb.ObtenerMascotas();
+
+            return View(mascotas);
         }
     }
 }
