@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ApliWeb.Models.Usuario>
+@{
+    ViewBag.Title = "Listado de Usuarios";
+}
+
+<h2>@ViewBag.Title</h2>
+<h2>@ViewBag.Message</h2>
+
+<section class="content">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class"col-sm-4 col-md-4 col-lg-4">
+                    <div class="well">
+                        <h3 class="text-warning">@item.Id_Usuario</h3>
+                        <h2 class="text-warning">@item.Nombre</h2>
+                        <h2 class="text-warning">@item.Apellido</h2>
+
+                        <ul>
+                            <li>Edad: @item.Direccion</li>
+                            <li>Contacto: @item.Telefono</li>
+                            <li>Rol: @item.Id_rol</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+

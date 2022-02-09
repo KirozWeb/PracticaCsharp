@@ -56,8 +56,7 @@ namespace ApliWeb.Controllers
             
         }
 
-        public ActionResult Adoptar(
-            )
+        public ActionResult Adoptar()
         {
             //ViewBag.Message = "Your contact page.";
 
@@ -67,6 +66,83 @@ namespace ApliWeb.Controllers
             List<Mascota> mascotas = sdb.ObtenerMascotas();
 
             return View(mascotas);
+        }
+
+        public ActionResult AdoptoMascota(int id)
+        {
+            //ViewBag.Message = "Your contact page.";
+
+            //aqui se llama a la funcion actualizar mascota
+            try
+            {
+                if (id == 1)
+                {
+                    DAL.Mascota sdb = new DAL.Mascota();
+                    if (sdb.AdoptoMascota(id))
+                    {
+                        ViewBag.Message = "Gracias por adoptar a un pequeño ";
+                        //ModelState.Clear();
+                    }
+                }
+                //return View();
+                return RedirectToAction("Adoptar", "Home", "Gracias");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = "Error al adoptar mascota " + ex;
+
+                //return View();
+                return RedirectToAction("Adoptar", "Home", "Error");
+            }
+            
+        }
+
+        public ActionResult Usuarios()
+        {
+            //ViewBag.Message = "Your contact page.";
+
+            ViewBag.Message = "Registrese para poder adoptar";         
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Usuarios(Usuario usuario)
+        {
+            //ViewBag.Message = "Your contact page.";
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    DAL.Usuario sdb = new DAL.Usuario();
+                    if (sdb.AgregarUsuario(usuario))
+                    {
+                        ViewBag.Message = "Gracias por registrarse: "+ usuario.Nombre;
+                        ModelState.Clear();
+                    }
+                }
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = "Error al registrar usuario " + ex + ModelState.IsValid;
+
+                return View();
+            }
+
+
+        }
+
+        public ActionResult ListaUsuarios()
+        {
+            //ViewBag.Message = "Your contact page.";
+
+            ViewBag.Message = "Registrese para poder adoptar";
+
+            DAL.Usuario sdb = new DAL.Usuario();
+            List<Usuario> usuarios = sdb.ObtenerUsuario();
+
+            return View(usuarios);
         }
     }
 }

@@ -1,0 +1,53 @@
+﻿@model ApliWeb.Models.Usuario
+@{
+    ViewBag.Title = "Usuarios";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<section class="content jumbotron">
+    @using (Html.BeginForm("Usuarios", "Home", FormMethod.Post))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.Nombre, "Nombre")
+            @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", placeholder = "Nombre del usuario" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Apellido, "Apellido")
+            @Html.TextBoxFor(m => m.Apellido, new { @class = "form-control", placeholder = "Apellido del usuario" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Direccion, "Direccion")
+            @Html.TextBoxFor(m => m.Direccion, new { @class = "form-control", placeholder = "Direccion del usuario" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Telefono, "Telefono")
+            @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control", placeholder = "Telefono" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Id_rol, "Roles")
+            @{ 
+                var listado = new List<SelectListItem>()
+                {
+                    new SelectListItem()
+                    {
+                        Text = "Administrador",
+                        Value = "1"
+                    },
+                    new SelectListItem()
+                    {
+                        Text = "Adoptador",
+                        Value = "2"
+                    },
+                    new SelectListItem()
+                    {
+                        Text = "Cuidador",
+                        Value = "3"
+                    }
+                };
+            }
+            @Html.DropDownList("miDropDownList", listado)
+        </div>
+        <input type="submit" class="btn btn-primary" value="Enviar" />
+    }
+</section>

@@ -1,0 +1,94 @@
+CREATE PROCEDURE [dbo].[AgregarUsuario]
+(
+	@Nombre nvarchar(50),
+	@Apellido nvarchar(50),
+	@Direccion nvarchar(50),
+	@Telefono nvarchar(50),
+	@Id_rol int
+)
+    AS
+	BEGIN
+	INSERT INTO Usuario VALUES(@Nombre, @Apellido,@Direccion,@Telefono,@Id_rol)
+	END
+
+CREATE PROCEDURE [dbo].[AgregarMascota]
+(
+	@Nombre nvarchar(50),
+	@Edad nvarchar(50),
+	@Descrip nvarchar(50),
+	@Correo nvarchar(50),
+	@Adoptado bit
+)
+    AS
+	BEGIN
+	INSERT INTO Mascota VALUES(@Nombre,@Edad,@Descrip,@Correo,@Adoptado)
+	END
+
+CREATE PROCEDURE [dbo].[ObtenerMascota]
+
+    AS
+	BEGIN
+	SELECT * FROM Mascota
+	END
+
+CREATE PROCEDURE [dbo].[ObtenerUsuario]
+
+    AS
+	BEGIN
+	SELECT * FROM Usuario
+	END
+
+
+CREATE PROCEDURE [dbo].[AdoptoMascota]
+(
+@Id_Mascota int,
+@Adoptado bit
+
+)
+AS
+BEGIN
+UPDATE Mascota SET adoptado = @Adoptado where id_mascota = @Id_Mascota
+END
+
+
+USE [AdoptaMascota2]
+
+
+CREATE TABLE [dbo].[Mascota](
+	[id_mascota] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[nombre] [nchar](30) NOT NULL,
+	[edad] [nchar](30) NOT NULL,
+	[descrip] [nchar](30) NOT NULL,
+	[correo] [nchar](30) NOT NULL,
+	[adoptado] [bit] NULL,
+) 
+
+
+USE [AdoptaMascota2]
+
+
+CREATE TABLE [dbo].[Rol](
+	[id_rol] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[nombre] [nchar](30) NOT NULL,
+ 
+) 
+
+
+USE [AdoptaMascota2]
+
+
+CREATE TABLE [dbo].[Usuario](
+	[id_usuario] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[nombre] [nchar](30) NOT NULL,
+	[apellido] [nchar](30) NOT NULL,
+	[direccion] [nchar](30) NOT NULL,
+	[telefono] [nchar](30) NOT NULL,
+	[id_rol] [int] NOT NULL,
+ )
+
+
+
+
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\MOOC\practicasharp\ApliWeb\App_Data\AdoptaMascota2.mdf;Integrated Security=True
+C:\MOOC\practicasharp\ApliWeb\App_Data\AdoptaMascota2.mdf
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\MOOC\practicasharp\ApliWeb\App_Data\AdoptaMascota.mdf;Integrated Security=True

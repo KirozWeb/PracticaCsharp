@@ -121,17 +121,20 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAL\Conexion.cs" />
     <Compile Include="DAL\Mascota.cs" />
+    <Compile Include="DAL\Usuario.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Mascota.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\AdoptaMascota.mdf" />
-    <Content Include="App_Data\AdoptaMascota_log.ldf">
-      <DependentUpon>AdoptaMascota.mdf</DependentUpon>
+    <Content Include="App_Data\AdoptaMascota2.mdf" />
+    <Content Include="App_Data\AdoptaMascota2_log.ldf">
+      <DependentUpon>AdoptaMascota2.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -169,6 +172,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Adoptar.cshtml" />
+    <Content Include="Views\Home\Usuarios.cshtml" />
+    <Content Include="Views\Home\ListaUsuarios.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -8,18 +8,21 @@ using System.Web;
 
 namespace ApliWeb.DAL
 {
-    public class Mascota
+    public class Mascota : Models.Mascota
     {
-        private SqlConnection con;
-        private void connection()
-        {
-            string constring = ConfigurationManager.ConnectionStrings["mascotaconn"].ToString();
-            con = new SqlConnection(constring);
-        }
+
+        private Conexion cone = new Conexion();
+        //private SqlConnection con;
+        //private void connection()
+        //{
+        //    string constring = ConfigurationManager.ConnectionStrings["mascotaconn"].ToString();
+        //    con = new SqlConnection(constring);
+        //}
 
         public bool AgregarMascota(Models.Mascota mascota)
         {
-            connection();
+            //connection();
+            cone.connection();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -29,38 +32,47 @@ namespace ApliWeb.DAL
             cmd.Parameters.AddWithValue("@Correo", mascota.CorreoContacto);
             cmd.Parameters.AddWithValue("@Adoptado", 0);
             cmd.CommandText = "AgregarMascota";
-            cmd.Connection = con;
-            con.Open();
+            //cmd.Connection = con;
+            cmd.Connection = cone.Conn;
+            //con.Open();
+            cone.Conn.Open();
             int i = cmd.ExecuteNonQuery();
-            //Console.WriteLine("Esto es la i en agregarmascota " + i);
-            con.Close();
+
+            //con.Close();
+            cone.Conn.Close();
             if (i >= 1)
                 return true;
             else
                 return false;
         }
 
+
+
         public List<Models.Mascota> ObtenerMascotas()
         {
-            connection();
+            //connection();
+            cone.connection();
             List<Models.Mascota> mascotas = new List<Models.Mascota>();
 
-            SqlCommand cmd = new SqlCommand("ObtenerMascota", con);
+            //SqlCommand cmd = new SqlCommand("ObtenerMascota", con);
+            SqlCommand cmd = new SqlCommand("ObtenerMascota", cone.Conn);
             cmd.CommandType = CommandType.StoredProcedure;
 
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
 
-            con.Open();
+            //con.Open();
+            cone.Conn.Open();
             sda.Fill(dt);
-            con.Close();
+            //con.Close();
+            cone.Conn.Close();
 
             foreach (DataRow dr in dt.Rows)
             {
                 mascotas.Add(
                     new Models.Mascota
-                    {
-
+                    {                        
+                        Id_Mascota = Convert.ToString(dr["id_mascota"]),
                         Nombre = Convert.ToString(dr["nombre"]),
                         Edad = Convert.ToString(dr["edad"]),
                         Descrip = Convert.ToString(dr["descrip"]),
@@ -69,6 +81,30 @@ namespace ApliWeb.DAL
                     });
             }
             return mascotas;
+        }
+
+
+        public bool AdoptoMascota(int id)
+        {
+            cone.connection();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@Id_Mascota", id);
+            cmd.Parameters.AddWithValue("@Adoptado", 1);
+            cmd.CommandText = "AdoptoMascota";
+            //cmd.Connection = con;
+            cmd.Connection = cone.Conn;
+            //con.Open();
+            cone.Conn.Open();
+            int i = cmd.ExecuteNonQuery();
+
+            //con.Close();
+            cone.Conn.Close();
+            if (i >= 1)
+                return true;
+            else
+                return false;
         }
 
     }
