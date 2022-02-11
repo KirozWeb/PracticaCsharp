@@ -83,3 +83,4 @@ C:\MOOC\practicasharp\ApliWeb\obj\Debug\ApliWeb.csproj.CoreCompileInputs.cache
 C:\MOOC\practicasharp\ApliWeb\obj\Debug\ApliWeb.csproj.CopyComplete
 C:\MOOC\practicasharp\ApliWeb\obj\Debug\ApliWeb.dll
 C:\MOOC\practicasharp\ApliWeb\obj\Debug\ApliWeb.pdb
+C:\MOOC\practicasharp\ApliWeb\obj\Debug\ApliWeb.csproj.AssemblyReference.cache

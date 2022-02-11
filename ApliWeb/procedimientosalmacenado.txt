@@ -50,6 +50,34 @@ BEGIN
 UPDATE Mascota SET adoptado = @Adoptado where id_mascota = @Id_Mascota
 END
 
+CREATE PROCEDURE [dbo].[ObtenerUnaMascota]
+(
+@Id_Mascota int
+)
+AS
+BEGIN
+SELECT * FROM Mascota where id_mascota = @Id_Mascota
+END
+
+
+
+CREATE PROCEDURE [dbo].[EditarMascota5]
+(
+    @Id_Mascota int,
+	@Nombre nvarchar(50),
+	@Edad nvarchar(50),
+	@Descrip nvarchar(50),
+	@Correo nvarchar(50),
+	@Adoptado bit
+
+)
+    AS
+	BEGIN
+	Update Mascota SET adoptado = @Nombre, edad = @Edad, Descrip = @Descrip, correo = @Correo, adoptado = @Adoptado WHERE id_mascota = @Id_Mascota
+	END
+
+
+
 
 USE [AdoptaMascota2]
 
@@ -85,6 +113,8 @@ CREATE TABLE [dbo].[Usuario](
 	[telefono] [nchar](30) NOT NULL,
 	[id_rol] [int] NOT NULL,
  )
+
+
 
 
 

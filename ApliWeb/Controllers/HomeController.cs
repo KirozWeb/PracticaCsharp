@@ -56,11 +56,19 @@ namespace ApliWeb.Controllers
             
         }
 
-        public ActionResult Adoptar()
+        public ActionResult Adoptar(string whatever)
         {
+            
             //ViewBag.Message = "Your contact page.";
+            if (!String.IsNullOrEmpty(whatever))
+            {
+                ViewBag.Message = whatever;
+            }
+            else
+            {
+                ViewBag.Message = "Encuentra tu mascota ideal";
+            }
 
-            ViewBag.Message = "Encuentra tu mascota ideal";
 
             DAL.Mascota sdb = new DAL.Mascota();
             List<Mascota> mascotas = sdb.ObtenerMascotas();
@@ -75,7 +83,7 @@ namespace ApliWeb.Controllers
             //aqui se llama a la funcion actualizar mascota
             try
             {
-                if (id == 1)
+                if (id >= 0)
                 {
                     DAL.Mascota sdb = new DAL.Mascota();
                     if (sdb.AdoptoMascota(id))
@@ -85,16 +93,78 @@ namespace ApliWeb.Controllers
                     }
                 }
                 //return View();
-                return RedirectToAction("Adoptar", "Home", "Gracias");
+                return RedirectToAction("Adoptar", "Home", new { whatever = ViewBag.Message });
             }
             catch (Exception ex)
             {
                 ViewBag.Message = "Error al adoptar mascota " + ex;
 
                 //return View();
-                return RedirectToAction("Adoptar", "Home", "Error");
+                return RedirectToAction("Adoptar", "Home", new { whatever = ViewBag.Message });
             }
             
+        }
+
+
+        public ActionResult EditarMascota(int id)
+        {
+            //ViewBag.Message = "Your contact page.";
+
+            //aqui se llama a la funcion actualizar mascota
+            try
+            {
+
+
+                DAL.Mascota sdb = new DAL.Mascota();
+                
+                var sdc = sdb.BuscarMascota(id);
+                if (sdc is null)
+                {
+                    ViewBag.otro = "objeto vacio";
+                    return View();
+                }
+                else
+                {
+                    
+                    ViewBag.otro = "objeto lleno";
+                    return View(sdc);
+                }
+                    //ModelState.Clear();
+                    //ViewBag.masc = sdb;
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = "Error al tratar de actualizar la mascota " + ex + ModelState.IsValid;
+
+                return View();
+            }
+
+        }
+
+        [HttpPost]
+        public ActionResult EditarMascota(Mascota mascota)
+        {
+            //ViewBag.Message = "Your contact page.";
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    DAL.Mascota sdb = new DAL.Mascota();
+                    if (sdb.EditarMascota(mascota))
+                    {
+                        ViewBag.Message = "Gracias por registrar a : ";
+                        ModelState.Clear();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = "Error al registrar mascota " + ex + ModelState.IsValid;
+
+                return RedirectToAction("Index", "Home");
+            }
+
         }
 
         public ActionResult Usuarios()
